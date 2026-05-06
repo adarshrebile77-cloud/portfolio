@@ -30,6 +30,12 @@
 
     section {
       padding: 40px 20px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .card {
@@ -43,6 +49,16 @@
 
     .card:hover {
       transform: scale(1.05);
+    }
+
+    img {
+      border-radius: 50%;
+      margin-top: 20px;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
     }
 
     button {
@@ -70,13 +86,14 @@
   <header>
     <h1>Hello, I'm Adarsh 👋</h1>
     <p>Learning Programming & Building Projects</p>
+    <img src="https://via.placeholder.com/120" alt="Profile Image">
   </header>
 
   <section>
     <h2>About Me</h2>
     <p>
       I am a student passionate about coding, electronics, and Arduino projects.
-      Currently learning web development.
+      Currently learning web development and building real-world projects.
     </p>
   </section>
 
@@ -89,14 +106,24 @@
     </div>
 
     <div class="card">
-      <h3>Arduino Audio Project</h3>
-      <p>Working with DFPlayer and speaker output.</p>
+      <h3>Arduino Audio Player</h3>
+      <p>Built an audio system using DFPlayer Mini and speaker.</p>
     </div>
 
   </section>
 
   <section>
     <h2>Contact</h2>
+
+    <p>Email: yourname@email.com</p>
+    <p>
+      GitHub: 
+      <a href="https://github.com/yourusername" target="_blank">
+        My GitHub
+      </a>
+    </p>
+
+    <br>
     <button onclick="sayHello()">Say Hello</button>
   </section>
 
