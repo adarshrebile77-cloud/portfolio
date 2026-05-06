@@ -65,6 +65,21 @@ header p {
   color: #94a3b8;
 }
 
+/* 🔹 Profile Image */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+  border: 3px solid #38bdf8;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.profile-img:hover {
+  transform: scale(1.08);
+}
+
 /* 🔹 Sections */
 section {
   padding: 80px 20px;
@@ -72,7 +87,7 @@ section {
   margin: auto;
 }
 
-/* 🔹 Glass cards */
+/* 🔹 Cards */
 .card {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 15px;
@@ -102,6 +117,16 @@ button:hover {
   background: #0ea5e9;
 }
 
+/* 🔹 Links */
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
 /* 🔹 Footer */
 footer {
   text-align: center;
@@ -122,10 +147,14 @@ footer {
   <a href="#contact">Contact</a>
 </nav>
 
-<!-- 🔹 Hero -->
+<!-- 🔹 Hero -->give me the whole code again
 <header id="home">
-  <h1>Rebile Adarsh👋</h1>
+  <h1>Rebile Adarsh 👋</h1>
   <p>Aspiring Developer | Arduino & Web Projects</p>
+
+  <!-- 🖼️ Profile Image -->
+  <img src="profile.png" class="profile-img">
+
   <button onclick="scrollToSection('projects')">View Projects</button>
 </header>
 
@@ -146,12 +175,12 @@ footer {
 
   <div class="card">
     <h3>🌐 Flutter Projects</h3>
-    <p>Includes flutter projects.</p>
+    <p>Includes Flutter-based apps and experiments.</p>
   </div>
 
   <div class="card">
     <h3>🤖 Arduino Projects</h3>
-    <p>Includes Arduino projects.</p>
+    <p>Hardware projects using Arduino and electronics.</p>
   </div>
 
 </section>
@@ -161,9 +190,13 @@ footer {
   <h2>Contact</h2>
   <div class="card">
     <p>Email: adarshrebile77@email.com</p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">
-adarshrebile77-cloud
-</a></p>
+    <p>
+      GitHub:
+      <a href="https://github.com/adarshrebile77-cloud" target="_blank">
+        adarshrebile77-cloud
+      </a>
+    </p>
+
     <button onclick="sayHello()">Say Hello</button>
   </div>
 </section>
