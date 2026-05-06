@@ -61,10 +61,15 @@ header {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  object-fit: cover;
 
-  /* 👇 ADD THIS */
-  transform: scale(1.2);
+  object-fit: cover;          /* 👈 IMPORTANT */
+  object-position: center;
+
+  border: 3px solid #38bdf8;
+
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+
+  transition: transform 0.3s;
 }
 
 .profile-img:hover {
